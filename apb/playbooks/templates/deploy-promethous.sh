@@ -42,7 +42,7 @@ spec:
   groups:
   - name: CPU Load Average Alert
     rules:
-    - alert: "CPU Load Average able 0.1"
+    - alert: "CPU Load Average above 0.1"
       expr: (base:cpu_system_load_average) > 0.1
       annotations:
         miqTarget: "LoadAverage"
